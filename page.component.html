@@ -1,0 +1,20 @@
+<div class="page_panel">
+  <div class="page_main">
+    <span class="list_number">共{{nums}}条数据</span>
+    <div class="page_content">
+      <ul>
+        <li class="page_list" (click)="prevPage()">&lt;</li>
+        <li [ngClass]="{'active':currentIndex == i}" class="page_list" *ngFor="let i of pageList" (click)="changePage(i)">{{i}}</li>
+        <li class="page_list" (click)="nextPage()">&gt;</li>
+      </ul>
+    </div>
+    <span class="show_current">显示{{showstart}}-{{showend}}条数据</span>
+    <span>每页</span>
+    <select name="" id="" [(ngModel)]="pageSize" (ngModelChange)="changePageSize()">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+    </select>
+    <span>条</span>
+  </div>
+</div>

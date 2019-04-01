@@ -1,0 +1,38 @@
+.page_panel {
+  overflow: hidden;
+  margin-top: 20px;
+  .page_main {
+    float: right;
+    .list_number{
+        margin-right: 20px;
+    }
+    .page_content {
+      display: inline-block;
+      border: 1px solid #fa5400;
+      padding: 5px 10px;
+      border-radius: 20px;
+      vertical-align: middle;
+      ul {
+        list-style: none;
+        overflow: hidden;
+      }
+      .page_list {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        margin: 0 10px;
+        float: left;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .active {
+        background-color: #fa5400;
+        color: #fff;
+      }
+    }
+    .show_current{
+        margin: 0 20px;
+    }
+  }
+}
